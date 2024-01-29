@@ -17,21 +17,21 @@ namespace RecapDemo_Dama
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)             //Method Kullanımı  
         {
             GenerateButtons();
 
         }
         private void GenerateButtons()
         {
-            Button[,] buttons = new Button[8, 8];
+            Button[,] buttons = new Button[8, 8];           //Hazır Class Kullanımı
             int top = 0;
             int left = 0;
             for (int i = 0; i <= buttons.GetUpperBound(0); i++)
             {
                 for (int j = 0; j <= buttons.GetUpperBound(1); j++)
                 {
-                    buttons[i, j] = new Button();
+                    buttons[i, j] = new Button();                       //For Döngüleri,İf blokları,Classın Özelliklerine Erişme,Değer Atamaları
                     buttons[i, j].Width = 50;
                     buttons[i, j].Height = 50;
                     buttons[i, j].Left = left;
